@@ -46,12 +46,12 @@ class ProductDetailsPage extends StatelessWidget {
                           children: [
                             Padding(
                               padding: const EdgeInsets.only(right: 10),
-                              child: Text(value.productsDetailsModel!.price,style: black16Cross,),
+                              child: Text('₹'+value.productsDetailsModel!.price,style: black16Cross,),
                             ),
-                            Text(value.productsDetailsModel!.sellingPrice,style: red16,),
+                            Text('₹'+value.productsDetailsModel!.sellingPrice,style: red16,),
                           ],
                         ):
-                        Text(value.productsDetailsModel!.sellingPrice,style: red16,),
+                        Text('₹'+value.productsDetailsModel!.sellingPrice,style: red16,),
                         Center(
                           child: SizedBox(
                             height: 40,
@@ -83,7 +83,7 @@ class ProductDetailsPage extends StatelessWidget {
 
                           ),
                         ),
-                        Text('Total :'+value.productsDetailsModel!.total,style: white,),
+                        Text('Total : ₹'+value.productsDetailsModel!.total,style: white,),
                         const Divider(thickness: 3,color: Colors.black,endIndent: 20,indent: 20,),
                         Align(
                           alignment: Alignment.centerLeft,

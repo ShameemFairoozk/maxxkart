@@ -106,18 +106,18 @@ class ProductListScreen extends StatelessWidget {
                                               const EdgeInsets.only(
                                                   right: 10),
                                               child: Text(
-                                                item.price,
+                                                '₹'+item.price,
                                                 style: black16Cross,
                                               ),
                                             ),
                                             Text(
-                                              item.sellingPrice,
+                                              '₹'+item.sellingPrice,
                                               style: red16,
                                             ),
                                           ],
                                         )
                                             : Text(
-                                          item.sellingPrice,
+                                          '₹'+item.sellingPrice,
                                           style: red16,
                                         ),
                                       ],
