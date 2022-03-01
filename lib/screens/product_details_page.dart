@@ -41,6 +41,8 @@ class ProductDetailsPage extends StatelessWidget {
                         Text(value.productsDetailsModel!.attribute,style: white12,),
                         double.parse(value.productsDetailsModel!.sellingPrice)<double.parse(value.productsDetailsModel!.price)?
                         Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          mainAxisSize: MainAxisSize.min,
                           children: [
                             Padding(
                               padding: const EdgeInsets.only(right: 10),
